@@ -469,7 +469,7 @@ body {
 
 .order {
   display: flex;
-  width: 1210px;
+  width: 1200px;
   margin: auto;
   justify-content: space-around;
   padding: 115px 0;
@@ -638,18 +638,29 @@ body {
   opacity: 95%;
 }
 
-.message {
+.message-wrap {
   position: absolute;
-  left: calc(50vw - 350px);
-  top: calc(50vh - 65px);
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: calc(50vh - 250px);
+}
+.message-wrap__message {
   margin: auto;
-  width: 700px;
+  width: 600px;
   background: #1d508f;
   text-align: center;
-  font-size: 30px;
-  padding: 50px;
-  height: 130px;
-  z-index: -1;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 290px;
+  height: 600px;
+  border-radius: 4px;
+  opacity: 98%;
+  background-image: url(../images/like.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .go {

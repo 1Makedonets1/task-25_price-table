@@ -17,12 +17,12 @@ body {
 }
 
 .container {
-background: $dark;;
+  background: $dark;
 }
 
 .order {
   display: flex;
-  width: 1210px;
+  width: 1200px;
   margin: auto;
   justify-content: space-around;
   padding: 115px 0;
@@ -202,18 +202,31 @@ background: $dark;;
   }
 }
 
-.message {
+.message-wrap {
   position: absolute;
-  left: calc(50vw - 350px);
-  top: calc(50vh - 65px);
-  margin: auto;
-  width: 700px;
-  background: $form-bg;
-  text-align: center;
-  font-size: 30px;
-  padding: 50px;
-  height: 130px;
   z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  // justify-content: center;
+  padding-top: calc(50vh - 250px);
+
+  &__message {
+    margin: auto;
+    width: 600px;
+    background: $form-bg;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 290px;
+    height: 600px;
+    border-radius: 4px;
+    opacity: 98%;
+    background-image: url(../images/like.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .go {

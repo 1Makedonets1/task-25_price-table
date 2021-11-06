@@ -1,7 +1,7 @@
 //use strict
 
 let form;
-let contscts;
+let contacts;
 function openForm() {
   form = document.getElementById("form");
   form.classList.add("go");
@@ -10,8 +10,13 @@ function openForm() {
 function sendContacts() {
   form = document.getElementById("form");
   form.classList.remove("go");
-  contscts = document.getElementById("feedback-message");
-  contscts.classList.add("go");
+  contacts = document.getElementById("feedback-message");
+  contacts.classList.add("go");
+}
+
+function closeMessage() {
+    contacts = document.getElementById("feedback-message");
+    contacts.classList.remove("go");
 }
 
 
