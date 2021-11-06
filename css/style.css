@@ -452,6 +452,129 @@ template {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #141b1c;
+  color: #FFFF;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.order {
+  display: flex;
+  width: 1210px;
+  margin: auto;
+  justify-content: space-around;
+  padding: 115px 0;
+}
+
+#under-title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.odd {
+  background: #2A3438;
+}
+
+.mark {
+  padding-right: 22px;
+}
+
+.color-green {
+  background: #5BB189;
+}
+
+.color-blue {
+  background: #3A6BA5;
+}
+
+.color-orange {
+  background: #EC632A;
+}
+
+.title-marking-group {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.marking {
+  position: absolute;
+  background: #DC3F45;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 147px;
+  height: 25px;
+  padding-top: 5px;
+  transform: rotate(45deg);
+  right: -31px;
+  top: 31px;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  background: #334247;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.price-card__title {
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: 700;
+  text-align: center;
+  padding: 33px;
+}
+.price-card__price {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 700;
+  padding: 25px;
+  line-height: 67px;
+  line-height: 100%;
+  vertical-align: top;
+}
+.price-card__description {
+  text-align: center;
+  width: 327px;
+  margin: auto;
+  padding: 40px 0;
+}
+.price-card__options-list {
+  list-style: none;
+  padding-bottom: 40px;
+}
+.price-card__options-list_item {
+  padding: 17px 22px;
+  line-height: 18px;
+  line-height: 100%;
+  vertical-align: top;
+}
+.price-card__options-list_item:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+.price-card__order-btn {
+  width: 154px;
+  margin: auto;
+  color: #FFFF;
+  border-style: none;
+  border-radius: 50px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+}
+.price-card__order-btn:hover {
+  cursor: pointer;
+  opacity: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

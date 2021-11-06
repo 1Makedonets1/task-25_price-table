@@ -1,14 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-@import "../node_modules/normalize-scss/sass/normalize/import-now"; 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
 @import "_var.scss";
 @import "_mixins.scss";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background: $body-bg;
+  color: $text-color;
+  font-size: $font-size;
+  font-family: "Montserrat", sans-serif;
+}
 
+.order {
+  display: flex;
+  width: 1210px;
+  margin: auto;
+  justify-content: space-around;
+  padding: 115px 0;
+}
 
+#under-title {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
 
+.odd {
+  background: $list-bg;
+}
 
+.mark {
+  padding-right: 22px;
+}
 
+.color-green {
+  background: $green;
+}
+
+.color-blue {
+  background: $blue;
+}
+
+.color-orange {
+  background: $orange;
+}
+
+.title-marking-group {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.marking {
+  position: absolute;
+  background: $marking-color;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 147px;
+  height: 25px;
+  padding-top: 5px;
+  transform: rotate(45deg);
+  right: -31px;
+  top: 31px;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  width: $card-width;
+  background: $card-bg;
+  padding-bottom: 40px;
+  overflow: hidden;
+
+  &__title {
+    font-size: 35px;
+    line-height: 43px;
+    font-weight: 700;
+    text-align: center;
+    padding: 33px;
+  }
+
+  &__price {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    padding: 25px;
+    line-height: 67px;
+    line-height: 100%;
+    vertical-align: top;
+  }
+
+  &__description {
+    text-align: center;
+    width: 327px;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  &__options-list {
+    list-style: none;
+    padding-bottom: 40px;
+
+    &_item {
+      padding: 17px 22px;
+      line-height: 18px;
+      line-height: 100%;
+      vertical-align: top;
+    }
+
+    &_item:hover {
+        cursor: pointer;
+        opacity: 60%;
+      }
+  }
+
+  &__order-btn {
+    width: 154px;
+    margin: auto;
+    color: $text-color;
+    border-style: none;
+    border-radius: 50px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+  }
+
+  &__order-btn:hover {
+    cursor: pointer;
+    opacity: 50%;
+  }
+}
