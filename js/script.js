@@ -6,7 +6,7 @@ function openForm() {
   form = document.getElementById("form");
   form.classList.add("go");
 }
- 
+
 function sendContacts() {
   form = document.getElementById("form");
   form.classList.remove("go");
@@ -15,8 +15,6 @@ function sendContacts() {
 }
 
 function closeMessage() {
-    contacts = document.getElementById("feedback-message");
-    contacts.classList.remove("go");
+  contacts = document.getElementById("feedback-message");
+  contacts.classList.remove("go");
 }
-
-

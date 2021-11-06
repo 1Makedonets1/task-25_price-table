@@ -4,9 +4,10 @@
 @import "_mixins.scss";
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  transition: all .1s ease-in;  
 }
 
 body {
@@ -207,9 +208,11 @@ body {
   z-index: -1;
   top: 0;
   width: 100vw;
-  height: 100vh;
-  // justify-content: center;
+  height: 1015px;
+  justify-content: center;
   padding-top: calc(50vh - 250px);
+  background: $wite;
+  opacity: 96%;
 
   &__message {
     margin: auto;
@@ -221,7 +224,6 @@ body {
     padding-top: 290px;
     height: 600px;
     border-radius: 4px;
-    opacity: 98%;
     background-image: url(../images/like.svg);
     background-position: center;
     background-size: cover;
