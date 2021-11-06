@@ -1,0 +1,23 @@
+{
+  "name": "task_25",
+  "version": "1.0.0",
+  "description": "\"Base_Start\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss:css/style.css --watch",
+    "compile": "sass scss/style.scss:css/style.css",
+    "prefix": "postcss css/style.css --use=autoprefixer --map=false --output=css/style.css",
+    "minify": "cleancss --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
+    "build": "npm run compile && npm run prefix && npm run minify"
+  },
+  "author": "Aleksandr",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "clean-css-cli": "^5.4.2",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "sass": "^1.43.4"
+  }
+}
