@@ -463,12 +463,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  background: #141b1c;
+}
+
 .order {
   display: flex;
   width: 1210px;
   margin: auto;
   justify-content: space-around;
   padding: 115px 0;
+  position: relative;
 }
 
 #under-title {
@@ -575,6 +580,80 @@ body {
 .price-card__order-btn:hover {
   cursor: pointer;
   opacity: 50%;
+}
+
+.form-wrap {
+  position: absolute;
+  left: calc(50vw - 650px);
+  top: 0;
+  margin: auto;
+  width: 1300px;
+  height: 900px;
+  background: #3A6BA5;
+  opacity: 98%;
+  padding: 50px;
+  font-size: 16px;
+  padding: 200px;
+  z-index: -1;
+}
+
+.contact-form {
+  z-index: 0;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background: #1d508f;
+  padding: 50px;
+  font-size: 16px;
+}
+.contact-form__contacts {
+  height: 50px;
+  width: 100%;
+  margin: auto;
+  color: #141b1c;
+  background: #FFFF;
+  padding: 10px;
+  outline: none;
+  border-style: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.contact-form__button {
+  height: 50px;
+  width: 100%;
+  color: #FFFF;
+  background: #EC632A;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.contact-form__button:hover {
+  cursor: pointer;
+  opacity: 95%;
+}
+
+.message {
+  position: absolute;
+  left: calc(50vw - 350px);
+  top: calc(50vh - 65px);
+  margin: auto;
+  width: 700px;
+  background: #1d508f;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+  height: 130px;
+  z-index: -1;
+}
+
+.go {
+  z-index: 99;
 }
 
 /*# sourceMappingURL=style.css.map */
